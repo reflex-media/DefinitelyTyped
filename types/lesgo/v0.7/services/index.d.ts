@@ -1,6 +1,5 @@
 export * from './ElasticCacheService';
 export * from './ElasticsearchService';
-export * from './OpenSearchService';
 export * from './AuroraDbService';
 export * from './pagination/Paginator';
 export * from './pagination/LengthAwarePaginator';

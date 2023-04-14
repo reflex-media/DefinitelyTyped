@@ -1,7 +1,6 @@
 import db from './db';
 import dynamodb from './dynamodb';
 import es from './elasticsearch';
-import opensearch from './opensearch';
 import generateUid from './generateUid';
 import isDecimal from './isDecimal';
 import isEmail from './isEmail';
@@ -16,4 +15,4 @@ export * from './prepSQLInsertParams';
 export * from './queue';
 export * from './validateFields';
 
-export { db, dynamodb, es, opensearch, generateUid, isDecimal, isEmail, isEmpty, logger };
+export { db, dynamodb, es, generateUid, isDecimal, isEmail, isEmpty, logger };
