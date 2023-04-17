@@ -13,6 +13,14 @@
         "typeRoots": [
             "../"
         ],
+        "paths": {
+            "lesgo": [
+                "lesgo/lib"
+            ],
+            "lesgo/*": [
+                "lesgo/lib/*"
+            ]
+        },
         "types": [],
         "noEmit": true,
         "forceConsistentCasingInFileNames": true

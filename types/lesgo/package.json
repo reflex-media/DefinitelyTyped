@@ -1,6 +1,8 @@
 {
     "private": true,
     "dependencies": {
+        "@aws-sdk/client-dynamodb": "^3.303.0",
+        "@aws-sdk/lib-dynamodb": "^3.303.0",
         "@opensearch-project/opensearch": "^2.2.0",
         "@elastic/elasticsearch": "~7.4.0",
         "@middy/core": "^1.4.0",
