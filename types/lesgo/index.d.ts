@@ -6,10 +6,10 @@
 
 // We did this to adjust to data-api-client
 
-export * from './lib/middlewares';
+export * from './middlewares';
 
-export * from './lib/exceptions';
+export * from './exceptions';
 
-export * from './lib/services';
+export * from './services';
 
-export * from './lib/utils';
+export * from './utils';

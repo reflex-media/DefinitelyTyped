@@ -15,10 +15,10 @@
         ],
         "paths": {
             "lesgo": [
-                "lesgo/lib"
+                "lesgo"
             ],
             "lesgo/*": [
-                "lesgo/lib/*"
+                "lesgo/*"
             ]
         },
         "types": [],
