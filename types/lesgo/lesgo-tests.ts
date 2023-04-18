@@ -92,7 +92,7 @@ db; // $ExpectType AuroraDbService | AuroraDbRDSProxyService || AuroraDbRDSProxy
 })();
 dynamodb; // $ExpectType DynamoDb
 (async () => {
-    await dynamodb.query('analytics', 'ForumName = :name', { ':title': { SS: ['The Man'] } }, '#title, tag'); // $ExpectType ItemList
+    await dynamodb.query('analytics', 'ForumName = :name', { ':title': { SS: ['The Man'] } }, '#title, tag'); // $ExpectType Record<string, any>[] | undefined
 })();
 elasticsearch('production'); // $ExpectType ElasticsearchService
 (async () => {

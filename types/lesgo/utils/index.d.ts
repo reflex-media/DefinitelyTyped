@@ -7,6 +7,7 @@ import isDecimal from './isDecimal';
 import isEmail from './isEmail';
 import isEmpty from './isEmpty';
 import logger from './logger';
+import getCurrentTimestamp from './getCurrentTimestamp';
 export * from './cache';
 export * from './crypto';
 export * from './getJwtSubFromAuthHeader';
@@ -16,4 +17,4 @@ export * from './prepSQLInsertParams';
 export * from './queue';
 export * from './validateFields';
 
-export { db, dynamodb, es, opensearch, generateUid, isDecimal, isEmail, isEmpty, logger };
+export { db, dynamodb, es, opensearch, generateUid, isDecimal, isEmail, isEmpty, logger, getCurrentTimestamp };

@@ -7,9 +7,9 @@ dynamodb.connect({
 });
 
 (async () => {
-    await dynamodb.query('analytics', 'ForumName = :name', { ':title': { SS: ['The Man'] } }, '#title, tag'); // $ExpectType ItemList
-    await dynamodb.queryCount('analytics', 'ForumName = :name', { ':title': { SS: ['The Man'] } }); // $ExpectType number
-    // $ExpectType PutItemOutput
+    await dynamodb.query('analytics', 'ForumName = :name', { ':title': { SS: ['The Man'] } }, '#title, tag'); // $ExpectType Record<string, any>[] | undefined
+    await dynamodb.queryCount('analytics', 'ForumName = :name', { ':title': { SS: ['The Man'] } }); // $ExpectType number | undefined
+    // $ExpectType PutCommandOutput
     await dynamodb.put('analytics', {
         HashKey: { S: 'haskey' },
         NumAttribute: { N: '1' },
@@ -19,7 +19,7 @@ dynamodb.connect({
         NullAttribute: { NULL: true },
     });
 
-    // $ExpectType UpdateItemOutput
+    // $ExpectType UpdateCommandOutput
     await dynamodb.update('analytics', { HashKey: { S: 'hashkey' } }, 'set #a = :x + :y', {
         ':x': { N: '20' },
         ':y': { N: '45' },
