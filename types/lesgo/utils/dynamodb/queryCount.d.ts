@@ -4,7 +4,7 @@ declare function queryCount(
     expressionAttributeValues: {
         [key: string]: any;
     },
-    opts?: { singletonConn?: string },
+    opts?: { singletonConn?: string; filterExpression?: string },
 ): Promise<number | undefined>;
 
 export default queryCount;
