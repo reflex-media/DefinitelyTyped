@@ -4,7 +4,7 @@ declare function query(
     expressionAttributeValues: {
         [key: string]: any;
     },
-    opts?: { singletonConn?: string; filterExpression?: string; projectionExpression?: string },
+    opts?: { singletonConn?: string; filterExpression?: string; projectionExpression?: string; indexName?: string },
 ): Promise<Array<Record<string, any>> | undefined>;
 
 export default query;
