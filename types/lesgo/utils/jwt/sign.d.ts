@@ -1,6 +1,6 @@
 declare function sign(
     payload: {},
-    secret: string,
+    secret?: string,
     opts?: { algorithm?: string; expiresIn?: string | number; notBefore?: string | number },
 ): Promise<string>;
 
