@@ -1,14 +1,13 @@
 import { BucketName, ObjectKey } from 'aws-sdk2-types/clients/s3';
 
-declare function getUploadSignedUrl(
+declare function getDownloadSignedUrl(
     key: ObjectKey,
     bucketName: BucketName,
     opts?: {
         singletonConn?: string;
         region?: string;
-        metadata?: object;
         expiresIn?: number;
     },
 ): Promise<string>;
 
-export default getUploadSignedUrl;
+export default getDownloadSignedUrl;
