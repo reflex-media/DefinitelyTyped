@@ -8,5 +8,4 @@ export * from './DynamoDbService';
 export * from './LoggerService';
 export * from './S3Service';
 export * from './SQSService';
-export * from './FirebaseAdminService';
 export * from './JWTService';

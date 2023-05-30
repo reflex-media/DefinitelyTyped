@@ -17,7 +17,6 @@ import './tests/services/DynamoDbService';
 import './tests/services/LoggerService';
 import './tests/services/S3Service';
 import './tests/services/SQSService';
-import './tests/services/FirebaseAdminService';
 import './tests/services/JWTService';
 
 import { ec, get, set, del } from 'lesgo/utils/cache';
